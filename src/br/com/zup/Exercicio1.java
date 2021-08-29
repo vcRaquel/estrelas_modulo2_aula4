@@ -30,14 +30,15 @@ public class Exercicio1 {
         } else{
             System.out.println("Por favor digite uma opção válida");
         }
-        double salarioLiquido = salarioBruto - impostoDeRenda - inss;
-        System.out.println("Salário Bruto: (" + valorDaHora + " * " + horasTrabalhadas +")" + " : R$ " + salarioBruto);
-        System.out.println("(-) IR (" + ((salarioBruto - impostoDeRenda) * 100) + ")" + " : R$ " + impostoDeRenda);
-        System.out.println("(-) INSS (10%)" + " : R$ " + inss);
-        System.out.println("FGTS (11%)" + " : R$ " + fgts);
-        System.out.println("Total de descontos" + " : R$ " + (salarioBruto - salarioLiquido));
-        System.out.println("Salario liquido" + " : R$ " + salarioLiquido);
 
+        double salarioLiquido = salarioBruto - impostoDeRenda - inss;
+
+        System.out.printf("\tSalário Bruto: (%s * %s)\t: R$ %s \n", valorDaHora, horasTrabalhadas, salarioBruto);
+        System.out.printf("\t(-) IR (%s%%)\t\t\t\t\t: R$ %s\n", ((impostoDeRenda / salarioBruto) * 100), impostoDeRenda);
+        System.out.printf("\t(-) INSS (%s%%)\t\t\t\t: R$ %s\n",((inss/salarioBruto)*100), inss);
+        System.out.printf("\tFGTS (%s%%)\t\t\t\t\t: R$ %s\n",((fgts/salarioBruto)*100), fgts);
+        System.out.printf("\tTotal de descontos\t\t\t\t: R$ %s\n",(salarioBruto - salarioLiquido));
+        System.out.printf("\tSalário Liquido\t\t\t\t\t: R$ %s\n",(salarioLiquido));
 
     }
 }
