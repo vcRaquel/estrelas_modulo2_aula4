@@ -33,12 +33,14 @@ public class Exercicio1 {
 
         double salarioLiquido = salarioBruto - impostoDeRenda - inss;
 
-        System.out.printf("\tSalário Bruto: (%s * %s)\t: R$ %s \n", valorDaHora, horasTrabalhadas, salarioBruto);
-        System.out.printf("\t(-) IR (%s%%)\t\t\t\t\t: R$ %s\n", ((impostoDeRenda / salarioBruto) * 100), impostoDeRenda);
-        System.out.printf("\t(-) INSS (%s%%)\t\t\t\t: R$ %s\n",((inss/salarioBruto)*100), inss);
-        System.out.printf("\tFGTS (%s%%)\t\t\t\t\t: R$ %s\n",((fgts/salarioBruto)*100), fgts);
-        System.out.printf("\tTotal de descontos\t\t\t\t: R$ %s\n",(salarioBruto - salarioLiquido));
-        System.out.printf("\tSalário Liquido\t\t\t\t\t: R$ %s\n",(salarioLiquido));
+        System.out.println("Agradecemos as informações. O cálculo do seu salário se encontra descrito abaixo:");
+        System.out.println();
+        System.out.printf("\tSalário Bruto: (%.0f * %.0f)\t\t: R$ %.2f \n", valorDaHora, horasTrabalhadas, salarioBruto);
+        System.out.printf("\t(-) IR (%.0f%%)\t\t\t\t\t\t: R$ %.2f\n", ((impostoDeRenda / salarioBruto) * 100), impostoDeRenda);
+        System.out.printf("\t(-) INSS (%.0f%%)\t\t\t\t\t: R$ %.2f\n",((inss/salarioBruto)*100), inss);
+        System.out.printf("\tFGTS (%.0f%%)\t\t\t\t\t\t: R$ %.2f\n",((fgts/salarioBruto)*100), fgts);
+        System.out.printf("\tTotal de descontos\t\t\t\t: R$ %.2f\n",(salarioBruto - salarioLiquido));
+        System.out.printf("\tSalário Liquido\t\t\t\t\t: R$ %.2f\n",(salarioLiquido));
 
     }
 }
