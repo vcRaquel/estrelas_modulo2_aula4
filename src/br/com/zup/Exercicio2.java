@@ -27,13 +27,13 @@ public class Exercicio2 {
                     descontoGasolina = (valorDaGasolina * 0.03);
                     valorDaGasolinaComDesconto = valorDaGasolina - descontoGasolina;
                     System.out.println("O valor a pagar seria de: R$ " + (litrosVendidos * valorDaGasolina));
-                    System.out.println("Como você abasteceu até 20l seu desconto foi de: R$ " + descontoGasolina + "Por litro");
+                    System.out.println("Como você abasteceu até 20l seu desconto foi de: R$ " + descontoGasolina + " Por litro");
                     System.out.println("O valor a ser pago será de: " + litrosVendidos * valorDaGasolinaComDesconto);
                 } else {
                     descontoGasolina = (valorDaGasolina * 0.05);
                     valorDaGasolinaComDesconto = valorDaGasolina - descontoGasolina;
                     System.out.println("O valor a pagar seria de: R$ " + litrosVendidos * valorDaGasolina);
-                    System.out.println("Como você abasteceu acima de 20l seu desconto foi de: R$ " + descontoGasolina + "Por litro");
+                    System.out.println("Como você abasteceu acima de 20l seu desconto foi de: R$ " + descontoGasolina + " Por litro");
                     System.out.println("O valor a ser pago será de: " + litrosVendidos * valorDaGasolinaComDesconto);
 
                 }
